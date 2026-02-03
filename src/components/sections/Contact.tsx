@@ -6,7 +6,7 @@ import { SectionHeading, FadeIn, Text, Section } from "@/components/primitives";
 
 export function Contact() {
   return (
-    <Section padding="extended" className="text-left">
+    <Section className="text-left">
       <Container>
         <SectionHeading>Let&apos;s Collaborate</SectionHeading>
 

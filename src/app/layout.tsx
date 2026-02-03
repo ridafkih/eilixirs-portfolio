@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Allura, Fraunces } from "next/font/google";
 import { PaperTexture } from "@/components/primitives";
+import { FloraIllustration } from "@/components/sections/FloraIllustration";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 
@@ -39,6 +40,7 @@ export default function RootLayout({
         <div className="relative min-h-screen">
           <PaperTexture />
           {children}
+          <FloraIllustration />
         </div>
       </body>
     </html>
