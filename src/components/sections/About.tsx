@@ -37,7 +37,7 @@ export function About() {
               alt="Iris Xie"
               width={800}
               height={1198}
-              className="aspect-square object-cover rounded-xl sm:w-[unset] w-1/2 justify-self-center"
+              className="aspect-square object-cover rounded-xl w-1/2 sm:w-[unset] justify-self-center"
               draggable={false}
               priority
             />

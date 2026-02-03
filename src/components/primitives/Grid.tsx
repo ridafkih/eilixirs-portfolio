@@ -19,7 +19,7 @@ const columnStyles: Record<GridColumns, string> = {
 
 const gapStyles: Record<GridGap, string> = {
   md: "gap-4",
-  lg: "gap-8",
+  lg: "gap-16",
 };
 
 export function Grid({
