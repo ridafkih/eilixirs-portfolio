@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Allura, Fraunces } from "next/font/google";
 import { PaperTexture } from "@/components/primitives";
-import { FloraIllustration } from "@/components/sections/FloraIllustration";
+import { FloraIllustrationBottom } from "@/components/sections/FloraIllustration";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 
@@ -37,10 +37,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(dmSans.variable, allura.variable, fraunces.variable, "antialiased")}>
-        <div className="relative min-h-screen">
+        <div className="page-grid relative min-h-screen">
           <PaperTexture />
           {children}
-          <FloraIllustration />
+          <FloraIllustrationBottom />
         </div>
       </body>
     </html>
