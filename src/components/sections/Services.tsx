@@ -7,7 +7,7 @@ import { services } from "@/data/services";
 
 export function Services() {
   return (
-    <Section background="transparent">
+    <Section>
       <Container>
         <SectionHeading>What I do</SectionHeading>
 

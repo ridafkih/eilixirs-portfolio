@@ -15,22 +15,18 @@ export function About() {
               <Text className="mb-5">
                 I&apos;m a strategic marketer and creative problem-solver with a
                 passion for building brands that resonate. Currently pursuing a
-                Bachelor of Commerce at Queen&apos;s University, I blend
-                analytical thinking with visual storytelling.
+                Bachelor of Commerce at Queen&apos;s University, Canada.
               </Text>
               <Text className="mb-5">
-                Beyond marketing, I&apos;m deeply curious about the intersection
-                of technology and creativity. My interests include photography,
-                AI, UI/UX design, and public speaking. I&apos;ve traveled to 26
-                countries, and can hold a conversation with anyone in Mandarin
-                Chinese.
+                Beyond marketing, I love when technology and design collide.
+                I&apos;m fond of photography, UX/UI design, and efficiency.
+                I&apos;ve traveled to 26 countries, and can hold a conversation
+                with anyone in Mandarin Chinese.
               </Text>
               <Text>
-                I thrive on turning complex ideas into compelling visual
-                narratives, whether through slide-driven presentations, brand
-                guidelines, or content that drives engagement. I believe great
-                marketing sits at the intersection of strategy, design, and human
-                connection.
+                I thrive on turning vague ideas into compelling visuals, whether
+                through slide-driven presentations, brand guidelines, or content
+                that drives engagement.
               </Text>
             </div>
 

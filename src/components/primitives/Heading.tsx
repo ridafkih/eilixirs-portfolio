@@ -9,10 +9,10 @@ interface HeadingProps {
 }
 
 const levelStyles: Record<HeadingLevel, string> = {
-  1: "text-4xl md:text-5xl font-semibold tracking-tight",
-  2: "text-3xl md:text-4xl font-semibold mb-6 tracking-tight text-left",
-  3: "text-xl font-medium mb-4 tracking-tight",
-  4: "text-lg font-medium mb-2",
+  1: "font-serif text-4xl md:text-5xl font-semibold tracking-tight",
+  2: "font-serif text-5xl font-semibold mb-6 tracking-tight text-left",
+  3: "font-serif text-xl font-medium mb-4 tracking-tight",
+  4: "font-serif text-lg font-medium mb-2 tracking-tight",
 };
 
 export function Heading({ children, level, className }: HeadingProps) {

@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 
 export function Hero() {
   return (
-    <section className="py-20 pb-24 relative overflow-hidden bg-gradient-to-b from-bg-light via-bg-light to-white">
+    <section className="py-20 pb-24 relative overflow-hidden z-10">
       {/* Gradient accent */}
       <div
         className="absolute w-full h-full opacity-35 blur-[70px] -top-1/5 left-0 z-0"

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import { DM_Sans, Allura } from "next/font/google";
+import { DM_Sans, Allura, Fraunces } from "next/font/google";
+import { PaperTexture } from "@/components/primitives";
+import { cn } from "@/lib/utils";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -12,6 +14,12 @@ const allura = Allura({
   variable: "--font-allura",
   subsets: ["latin"],
   weight: "400",
+});
+
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -27,8 +35,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} ${allura.variable} antialiased`}>
-        {children}
+      <body className={cn(dmSans.variable, allura.variable, fraunces.variable, "antialiased")}>
+        <div className="relative min-h-screen">
+          <PaperTexture />
+          {children}
+        </div>
       </body>
     </html>
   );
