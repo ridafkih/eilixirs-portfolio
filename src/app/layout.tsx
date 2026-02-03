@@ -23,9 +23,34 @@ const longCang = Long_Cang({
 })
 
 export const metadata: Metadata = {
-  title: "Iris Xie - Portfolio",
+  title: {
+    default: "Iris Xie - Portfolio",
+    template: "%s | Iris Xie",
+  },
   description:
     "Strategic marketer and creative problem-solver with a passion for building brands that resonate.",
+  metadataBase: new URL("https://eilixirs.cc"),
+  keywords: [
+    "Iris Xie",
+    "marketing",
+    "brand strategy",
+    "creative",
+    "portfolio",
+    "marketer",
+  ],
+  authors: [{ name: "Iris Xie" }],
+  creator: "Iris Xie",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
