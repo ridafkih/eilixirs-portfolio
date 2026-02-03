@@ -1,22 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  --page-margin: clamp(1.5rem, 3vw, 2.5rem);
-}
-
-.page-grid {
-  display: grid;
-  grid-template-columns: 1fr min(56rem, 100% - var(--page-margin) * 2) 1fr;
-}
-
-.page-grid > * {
-  grid-column: 2;
-}
-
-.full-bleed {
-  grid-column: 1 / -1;
-}
-
 @theme inline {
   --color-bg-light: #f7f7f5;
   --color-text-dark: #1a1816;
@@ -26,48 +9,5 @@
   --color-accent-peach: #ffb8a8;
   --color-white: #ffffff;
 
-  --font-sans: var(--font-dm-sans);
-  --font-serif: var(--font-fraunces);
-  --font-script: var(--font-allura);
-}
-
-body {
-  background-color: var(--color-bg-light);
-  color: var(--color-text-dark);
-  font-family: var(--font-sans);
-  line-height: 1.6;
-  font-size: 17px;
-  overflow-x: hidden;
-}
-
-.grid-pattern {
-  position: relative;
-}
-
-.grid-pattern::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 2px,
-      rgba(0, 0, 0, 0.01) 2px,
-      rgba(0, 0, 0, 0.01) 4px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 2px,
-      rgba(0, 0, 0, 0.01) 2px,
-      rgba(0, 0, 0, 0.01) 4px
-    );
-  opacity: 0.3;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.grid-pattern > * {
-  position: relative;
-  z-index: 2;
+  --font-chinese: var(--font-long-cang);
 }

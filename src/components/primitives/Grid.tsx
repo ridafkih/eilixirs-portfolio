@@ -12,14 +12,14 @@ interface GridProps {
 
 const columnStyles: Record<GridColumns, string> = {
   "1": "grid-cols-1",
-  "2": "grid-cols-1 lg:grid-cols-2",
-  "3": "grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
-  "2-1": "grid-cols-1 lg:grid-cols-[2fr_1fr]",
+  "2": "grid-cols-1 sm:grid-cols-2",
+  "3": "grid-cols-1 sm:grid-cols-2 md:grid-cols-3",
+  "2-1": "grid-cols-1 sm:grid-cols-[3fr_2fr] items-end",
 };
 
 const gapStyles: Record<GridGap, string> = {
-  md: "gap-8",
-  lg: "gap-16",
+  md: "gap-4",
+  lg: "gap-8",
 };
 
 export function Grid({

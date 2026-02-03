@@ -1,13 +1,18 @@
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
-export function FloraIllustrationBottom() {
+interface FloraIllustrationBottomProps {
+  className?: string;
+}
+
+export function FloraIllustrationBottom({ className }: FloraIllustrationBottomProps) {
   return (
     <Image
       src="/illustration/floral-illustration-1.png"
       alt=""
       width={1920}
       height={600}
-      className="full-bleed w-full h-auto mix-blend-multiply"
+      className={cn("mix-blend-multiply", className)}
       draggable={false}
       aria-hidden="true"
     />
@@ -16,13 +21,13 @@ export function FloraIllustrationBottom() {
 
 export function FloraIllustrationTop() {
   return (
-    <div className="full-bleed flex justify-end">
+    <div className="col-[2/-1] flex justify-end max-w-3/4 justify-self-end -mt-8 -mb-24">
       <Image
         src="/illustration/floral-illustration-2.png"
         alt=""
-        width={400}
-        height={400}
-        className="w-64 md:w-80 lg:w-[28rem] h-auto mix-blend-multiply -mb-32 md:-mb-40 lg:-mb-48"
+        width={1920}
+        height={1920}
+        className="mix-blend-multiply -translate-y-4 md:translate-y-0"
         draggable={false}
         aria-hidden="true"
       />
