@@ -10,7 +10,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen grid grid-cols-[1fr_min(56rem,100%-2*clamp(1.5rem,3vw,2.5rem))_1fr] *:col-start-2">
+    <main className="relative min-h-screen grid grid-cols-[1fr_min(56rem,100%-2*clamp(1.5rem,3vw,2.5rem))_1fr] *:col-start-2 gap-y-18">
       <FloraIllustrationTop />
       <About />
       <Services />

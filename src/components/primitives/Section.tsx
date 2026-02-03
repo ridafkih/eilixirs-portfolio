@@ -9,8 +9,8 @@ interface SectionProps {
 }
 
 const paddingStyles: Record<SectionPadding, string> = {
-  default: "py-20",
-  extended: "py-20 pb-60",
+  default: "",
+  extended: "pb-60",
 };
 
 export function Section({

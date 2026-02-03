@@ -14,7 +14,7 @@ interface CardProps {
 
 const paddingStyles: Record<CardPadding, string> = {
   none: "",
-  md: "p-8",
+  md: "p-6",
   lg: "p-10",
 };
 

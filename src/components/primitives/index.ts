@@ -11,3 +11,4 @@ export { Card } from "./Card";
 export { CloseButton } from "./CloseButton";
 export { ScaleIn } from "./ScaleIn";
 export { PaperTexture } from "./PaperTexture";
+export { DecoratedHeading } from "./DecoratedHeading";

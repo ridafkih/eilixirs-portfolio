@@ -1,20 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import { FadeIn, Text, Heading, Section, Grid, ScaleIn } from "@/components/primitives";
+import { FadeIn, Text, Section, Grid, ScaleIn, DecoratedHeading } from "@/components/primitives";
 
 export function About() {
   return (
-    <Section className="pt-0 sm:pb-20 pb-0">
+    <Section>
       <FadeIn duration={0.6}>
         <Grid className="pt-12" columns="2-1" gap="lg">
           <div>
-            <div className="relative w-fit">
-              <div className="absolute inset-y-0 left-0 origin-left select-none pointer-events-none">
-                <Heading className="font-chinese opacity-15 text-nowrap text-3xl md:text-6xl lg:-translate-x-8 -translate-y-2/3" level={2}>嗨～我是思睿</Heading>
-              </div>
-              <Heading level={2}>Hi! I&apos;m Iris</Heading>
-            </div>
+            <DecoratedHeading.Root level={1}>
+              <DecoratedHeading.Background>嗨～我是思睿</DecoratedHeading.Background>
+              <DecoratedHeading.Content>Hi! I&apos;m Iris</DecoratedHeading.Content>
+            </DecoratedHeading.Root>
             <Text className="mb-5">
               I&apos;m a strategic marketer and creative problem-solver with a
               passion for building brands that resonate. Currently pursuing a

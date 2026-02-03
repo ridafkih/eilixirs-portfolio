@@ -27,7 +27,7 @@ export function FloraIllustrationTop() {
         alt=""
         width={1920}
         height={1920}
-        className="mix-blend-multiply -translate-y-4 md:translate-y-0"
+        className="mix-blend-multiply xs:-translate-y-4 md:translate-y-0"
         draggable={false}
         aria-hidden="true"
       />

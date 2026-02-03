@@ -1,22 +1,25 @@
 "use client";
 
 import { ServiceCard } from "@/components/ui/ServiceCard";
-import { SectionHeading, FadeIn, StaggerItem, Section, Grid } from "@/components/primitives";
+import { FadeIn, StaggerItem, Section, DecoratedHeading } from "@/components/primitives";
 import { services } from "@/data/services";
 
 export function Services() {
   return (
     <Section>
-      <SectionHeading>What I do</SectionHeading>
+      <DecoratedHeading.Root level={2}>
+        <DecoratedHeading.Background>行业</DecoratedHeading.Background>
+        <DecoratedHeading.Content>What I do</DecoratedHeading.Content>
+      </DecoratedHeading.Root>
 
       <FadeIn delay={0.2} direction="none">
-        <Grid columns="1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-px p-px bg-black/8">
           {services.map((service, index) => (
             <StaggerItem key={service.title} index={index}>
               <ServiceCard service={service} />
             </StaggerItem>
           ))}
-        </Grid>
+        </div>
       </FadeIn>
     </Section>
   );

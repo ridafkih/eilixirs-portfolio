@@ -45,7 +45,7 @@ function ModalOverlay({
       {isOpen && (
         <motion.div
           className={cn(
-            "fixed inset-0 z-50",
+            "fixed inset-0 z-100",
             "flex items-center justify-center",
             "bg-text-dark/95 backdrop-blur-md",
             className
